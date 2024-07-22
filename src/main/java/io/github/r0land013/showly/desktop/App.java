@@ -11,6 +11,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {
         var appManager = new ApplicationManager(stage, MainPresenter.class);
+        stage.setResizable(false);//Quita la posibilidad de que se modifique ek tamaño de la pantalla
         appManager.exec();
     }
 

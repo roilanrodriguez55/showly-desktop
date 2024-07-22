@@ -15,81 +15,94 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="492.0" prefWidth="594.0" stylesheets="@../stylesheets/main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <ImageView fx:id="helpImage" fitHeight="64.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_RIGHT">
-         <image>
-            <Image url="@../images/help.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <BorderPane.margin>
-            <Insets right="10.0" top="10.0" />
-         </BorderPane.margin>
-      </ImageView>
-   </top>
-   <center>
-      <VBox alignment="CENTER" prefHeight="402.0" prefWidth="546.0" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="119.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/logo.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="loadingLabel" styleClass="guide-label">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Label>
-            <GridPane alignment="CENTER" maxWidth="-Infinity" prefHeight="106.0" prefWidth="501.0" VBox.vgrow="NEVER">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.79998779296875" minWidth="10.0" prefWidth="153.5999755859375" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.80004882812503" minWidth="10.0" prefWidth="216.0000244140625" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints maxHeight="38.4" minHeight="10.0" prefHeight="38.4" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="49.599999999999994" minHeight="10.0" prefHeight="33.599999999999994" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="49.599999999999994" minHeight="10.0" prefHeight="33.599999999999994" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Label styleClass="guide-label" text="Port">
-                     <font>
-                        <Font name="Ubuntu Bold" size="16.0" />
-                     </font>
-                  </Label>
-                  <Label styleClass="guide-label" text="Slide File" GridPane.rowIndex="1">
-                     <font>
-                        <Font name="Ubuntu Bold" size="16.0" />
-                     </font>
-                  </Label>
-                  <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="281.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <children>
-                        <Label fx:id="selectedFileLabel" prefHeight="19.0" prefWidth="131.0" text="No selected" />
-                        <Button fx:id="selectFileButton" mnemonicParsing="false" prefHeight="24.0" prefWidth="70.0" text="Select...">
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                        </Button>
-                     </children>
-                  </HBox>
-                  <Label styleClass="guide-label" text="Presentation Name" GridPane.rowIndex="2" />
-                  <TextField fx:id="presentationNameTextField" prefHeight="24.0" prefWidth="258.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="portTextField" text="7000" GridPane.columnIndex="1" />
-               </children>
-               <VBox.margin>
-                  <Insets top="50.0" />
-               </VBox.margin>
-            </GridPane>
-            <Button id="showButton" fx:id="showButton" mnemonicParsing="false" styleClass="main-action-button" text="Show!" textFill="WHITE">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <VBox.margin>
-                  <Insets top="50.0" />
-               </VBox.margin>
-            </Button>
-         </children>
-      </VBox>
-   </center>
+
+<BorderPane prefHeight="492.0" prefWidth="594.0" stylesheets="@../stylesheets/main.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <ImageView fx:id="helpImage" fitHeight="64.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true"
+                   BorderPane.alignment="TOP_RIGHT">
+            <image>
+                <Image url="@../images/help.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <BorderPane.margin>
+                <Insets right="10.0" top="10.0"/>
+            </BorderPane.margin>
+        </ImageView>
+    </top>
+    <center>
+        <VBox alignment="CENTER" prefHeight="402.0" prefWidth="546.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="119.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="loadingLabel" styleClass="guide-label">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <GridPane alignment="CENTER" maxWidth="-Infinity" prefHeight="106.0" prefWidth="501.0"
+                          VBox.vgrow="NEVER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.79998779296875" minWidth="10.0"
+                                           prefWidth="153.5999755859375"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.80004882812503" minWidth="10.0"
+                                           prefWidth="216.0000244140625"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="38.4" minHeight="10.0" prefHeight="38.4" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="49.599999999999994" minHeight="10.0" prefHeight="33.599999999999994"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="49.599999999999994" minHeight="10.0" prefHeight="33.599999999999994"
+                                        vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label styleClass="guide-label" text="Port">
+                            <font>
+                                <Font name="Ubuntu Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                        <Label styleClass="guide-label" text="Slide File" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Ubuntu Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="281.0" GridPane.columnIndex="1"
+                              GridPane.rowIndex="1">
+                            <children>
+                                <Label fx:id="selectedFileLabel" prefHeight="19.0" prefWidth="131.0"
+                                       text="No selected"/>
+                                <Button fx:id="selectFileButton" mnemonicParsing="false" prefHeight="24.0"
+                                        prefWidth="70.0" text="Select...">
+                                    <HBox.margin>
+                                        <Insets left="10.0"/>
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <Label styleClass="guide-label" text="Presentation Name" GridPane.rowIndex="2"/>
+                        <TextField fx:id="presentationNameTextField" prefHeight="24.0" prefWidth="258.0"
+                                   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <TextField fx:id="portTextField" text="7000" GridPane.columnIndex="1"/>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="50.0"/>
+                    </VBox.margin>
+                </GridPane>
+                <Button id="showButton" fx:id="showButton" mnemonicParsing="false" styleClass="main-action-button"
+                        text="Show!" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <VBox.margin>
+                        <Insets top="50.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
 </BorderPane>

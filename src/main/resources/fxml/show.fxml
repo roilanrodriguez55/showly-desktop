@@ -12,81 +12,81 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="621.0" prefWidth="664.0" styleClass="container" stylesheets="@../stylesheets/main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="711.0" styleClass="container" stylesheets="@../stylesheets/main.css">
-         <children>
-            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="711.0">
-               <VBox.margin>
-                  <Insets bottom="50.0" />
-               </VBox.margin>
-            </HBox>
-            <ImageView fx:id="slideImageView" fitHeight="286.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true">
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-               <image>
-                  <Image url="@../images/logo.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="slidePositionLabel" text="part/total">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Label>
-            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="711.0">
-               <children>
-                  <Button fx:id="previousSlideButton" mnemonicParsing="false" text="&lt;" />
-                  <Button fx:id="nextSlideButton" mnemonicParsing="false" text="&gt;">
-                     <HBox.margin>
-                        <Insets left="50.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-            <Button id="stopShowingButton" fx:id="stopShowingButton" mnemonicParsing="false" styleClass="main-action-button" text="Stop showing" textFill="WHITE">
-               <VBox.margin>
-                  <Insets top="50.0" />
-               </VBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-         </children>
-      </VBox>
-   </center>
-   <top>
-      <VBox alignment="CENTER" prefHeight="41.0" prefWidth="711.0" BorderPane.alignment="TOP_CENTER">
-         <children>
-            <Label fx:id="presentationNameLabel" styleClass="presentation-name" text="Presentation Name">
-               <VBox.margin>
-                  <Insets top="50.0" />
-               </VBox.margin>
-            </Label>
-            <Text fx:id="ipAddressLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Tell others to try all these links: http://0.0.0.0:8080" textAlignment="CENTER" wrappingWidth="543.8279418945312">
-               <font>
-                  <Font name="Ubuntu" size="14.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="5.0" />
-               </VBox.margin>
-            </Text>
-         </children>
-      </VBox>
-   </top>
-   <bottom>
-      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="711.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label text="Made with love by" />
-            <Label styleClass="guide-label" text="R0land013" textFill="GREEN">
-               <HBox.margin>
-                  <Insets left="5.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
-         </children>
-      </HBox>
-   </bottom>
+<BorderPane prefHeight="621.0" prefWidth="664.0" styleClass="container" stylesheets="@../stylesheets/main.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="434.0" prefWidth="711.0" styleClass="container"
+              stylesheets="@../stylesheets/main.css">
+            <children>
+                <HBox alignment="CENTER" prefHeight="32.0" prefWidth="711.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </HBox>
+                <ImageView fx:id="slideImageView" fitHeight="286.0" fitWidth="538.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <image>
+                        <Image url="@../images/logo.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="slidePositionLabel" text="part/total">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="57.0" prefWidth="711.0">
+                    <children>
+                        <Button fx:id="previousSlideButton" mnemonicParsing="false" text="&lt;"/>
+                        <Button fx:id="nextSlideButton" mnemonicParsing="false" text="&gt;">
+                            <HBox.margin>
+                                <Insets left="50.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <Button id="stopShowingButton" fx:id="stopShowingButton" mnemonicParsing="false"
+                        styleClass="main-action-button" text="Stop showing" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets top="50.0"/>
+                    </VBox.margin>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <VBox alignment="CENTER" prefHeight="41.0" prefWidth="711.0" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <Label fx:id="presentationNameLabel" styleClass="presentation-name" text="Presentation Name"/>
+                <Text fx:id="ipAddressLabel" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Tell others to try all these links: http://0.0.0.0:8080" textAlignment="CENTER"
+                      wrappingWidth="543.8279418945312">
+                    <font>
+                        <Font name="Ubuntu" size="14.0"/>
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="711.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Made with love by"/>
+                <Label styleClass="guide-label" text="R0land013" textFill="GREEN">
+                    <HBox.margin>
+                        <Insets left="5.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="13.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </bottom>
 </BorderPane>
